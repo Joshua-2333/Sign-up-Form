@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <figure id="photo">
+      <img src="images/jpnl.jpg" alt="Japan nightlife with people, restaurants and bars">
+    </figure>
+    <main>
+      <h1 id="welcometext">Please Sign In!</h1>
+      <h2 id="message">Come join us and explore the night with us! Let's see what we can uncover together in Japan.</h2>
+      <form method="post" action="/" id="signform">
+        
+        <div class="field">
+          <input type="text" id="firstName" name="firstName" autocomplete="off" minlength="2" maxlength="14" required>
+          <label for="firstName">First Name:</label>
+        </div>
+
+        <div class="field">
+          <input type="text" id="lastName" name="lastName" autocomplete="off" minlength="2" maxlength="14" required>
+          <label for="lastName">Last Name:</label>
+        </div>
+
+        <div class="field">
+          <input type="email" id="email" name="email" maxlength="32" placeholder="e.g. 2Wx5y@example.com" required>
+          <label for="email">Email:</label>
+        </div>
+
+        <div class="field">
+          <input type="tel" id="phoneNumber" name="phoneNumber" autocomplete="off" placeholder="e.g. 123-456-7890" required>
+          <label for="phoneNumber">Phone Number:</label>
+        </div>
+
+        <div class="field">
+          <input type="password" id="password" name="password" minlength="8" maxlength="16" required> 
+          <label for="password">Password:</label>
+        </div>
+
+        <div class="field">
+          <input type="password" id="confirmPassword" name="confirmPassword" minlength="8" maxlength="16" required>
+          <label for="confirmPassword">Confirm Password:</label>
+        </div>
+
+        <button type="submit">Create Account</button>
+      </form>
+      <p id="login">Already have an account? Please <a href="#">Log In</a></p>
+    </main>
+  </body>
+</html>
